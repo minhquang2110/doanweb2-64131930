@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Trang chủ - Khoa CNTT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        .card-hover:hover {
+            box-shadow: 0 6px 20px rgba(104, 39, 115, 0.5);
+            cursor: pointer;
+            transform: translateY(-5px);
+            transition: 0.3s ease;
+        }
+
+        .card-img-top {
+            height: 180px;
+            object-fit: cover;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .card-title {
+            color: #682773;
+            font-weight: 600;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .card-link {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .card-link:hover {
+            text-decoration: none;
+            color: #682773;
+        }
+    </style>
+</head>
+
+<body>
+    <header th:replace="~{layout :: header}"></header>
+    <nav th:replace="~{layout :: menu}"></nav>
+
+    <main class="container my-5">
+        <h1 class="mb-4 text-center">Chào mừng đến với Khoa Công nghệ Thông tin</h1>
+        <div class="row g-4 justify-content-center">
+
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-2">
+                <a href="https://khoacntt.ntu.edu.vn/tin-hoat-dong/ban-hanh-cap-nhat-ctdt-nganh-cntt-dinh-huong-httt-cnpm-va-nganh-htttql-ap-dun" class="card-link">
+                    <div class="card card-hover">
+                        <img src="https://khoacntt.ntu.edu.vn/uploads/54/images/news/5576/img/ban-hanh-cap-nhat-ctdt-nganh-cntt-dinh-huong-httt-cnpm-va-nganh-htttql-ap-dun_thumb400.png" class="card-img-top" alt="Hoạt động đào tạo" />
+                        <div class="card-body">
+                            <h5 class="card-title">Hoạt động đào tạo</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-2">
+                <a href="https://khoacntt.ntu.edu.vn/tin-hoat-dong/ky-yeu-hoi-thao-ict2023" class="card-link">
+                    <div class="card card-hover">
+                        <img src="https://khoacntt.ntu.edu.vn/uploads/54/images/news/7313/img/ict2023ntu-230831091408_thumb400.png" class="card-img-top" alt="Khoa học công nghệ" />
+                        <div class="card-body">
+                            <h5 class="card-title">Khoa học công nghệ</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-2">
+                <a href="https://khoacntt.ntu.edu.vn/tin-hoat-dong/hoi-thi-tin-hoc-tr-tinh-khanh-hoa-lan-thu-xxvii-nam-2022" class="card-link">
+                    <div class="card card-hover">
+                        <img src="https://khoacntt.ntu.edu.vn/uploads/54/images/news/6059/img/d3fd240c6145a21bfb541_optimized-220617100253_thumb400.jpg" class="card-img-top" alt="Phục vụ cộng đồng" />
+                        <div class="card-body">
+                            <h5 class="card-title">Phục vụ cộng đồng</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-2">
+                <a href="https://khoacntt.ntu.edu.vn/tin-hoat-dong/ke-hoach-dang-ky-hoc-phan-hoc-ky-2" class="card-link">
+                    <div class="card card-hover">
+                        <img src="https://khoacntt.ntu.edu.vn/uploads/54/images/news/5597/img/dang_ky_hoc_phan-230305094954_thumb400.png" class="card-img-top" alt="Thông tin học vụ" />
+                        <div class="card-body">
+                            <h5 class="card-title">Thông tin học vụ - Học phần</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-2">
+                <a href="https://khoacntt.ntu.edu.vn/tin-hoat-dong/ivs-tuyen-dung-qa-fresher" class="card-link">
+                    <div class="card card-hover">
+                        <img src="https://khoacntt.ntu.edu.vn/uploads/54/images/news/6213/img/tuyen-dung-230304222227_thumb400.png" class="card-img-top" alt="Tuyển dụng - việc làm" />
+                        <div class="card-body">
+                            <h5 class="card-title">Tuyển dụng - Việc làm</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer th:replace="~{layout :: footer}"></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
